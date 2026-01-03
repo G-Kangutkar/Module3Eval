@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 
+
 function Admin() {
     const [result,setResult]=useState([])
     const [formData, setFormData] = useState({
@@ -89,6 +90,7 @@ function Admin() {
 
             </div>
             <div>
+                
                 <div style={{padding:'15px',margin:'10px',display:'grid', gridTemplateColumns:'repeat(4,1fr)',border:'1px solid black'}}>
                     {result.map( res=>(<div key={res.id}>
                         <p>{res.image}</p>

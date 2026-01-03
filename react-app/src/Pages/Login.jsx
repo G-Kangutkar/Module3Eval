@@ -21,7 +21,7 @@ function Login (){
     }
 
     return(
-        <div>
+        <div style={{backgroundColor:'pink' , padding:'20px', margin:'5px', textAlign:'center'}}>
             <input style={{padding:'10px',margin:'5px'}} type="email" value={email} placeholder="Enter email" onChange={(e)=>setEmail(e.target.value)} /> <br />
             <input style={{padding:'10px',margin:'5px'}} type="password" value={password} placeholder="Enter Password" onChange={(e)=>setPassword(e.target.value)} /> <br />
             <button style={{padding:'10px',margin:'5px'}} onClick={handleLogin}>Login</button>
