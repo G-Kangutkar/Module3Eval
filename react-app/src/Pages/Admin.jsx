@@ -23,7 +23,7 @@ function Admin() {
         parkingLot: formData.parkingLot,
         image: formData.image
         }
-        localStorage.setItem('evalData',newData);
+        localStorage.setItem('evalData',JSON.stringify(newData));
         setFormData({restaurantID: Date.now(),
         restaurantName: "",
         address: "",
@@ -55,7 +55,7 @@ function Admin() {
                         <option value="North Indian">North Indian</option>
                         <option value="South Indian">South Indian</option>
                     </select> <br />
-                    <select style={{padding:'10px',margin:'5px'}} name="parkingLot" value={formData.parkingLot}>
+                    <select style={{padding:'10px',margin:'5px'}} name="parkingLot" value={formData.parkingLot} onChange={handleInput}>
                         <option value="Parking">Paking</option>
                         <option value="No-Parking">No-Parking</option>
                     </select><br />
